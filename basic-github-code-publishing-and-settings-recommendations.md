@@ -1,0 +1,29 @@
+# Basic GitHub code publishing & settings recommendations
+
+- Add responsible individuals or teams to repository access roles settings.
+- Ensure there is a detailed `README` (or `README.md`, `README.rst`) [readme file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) describing the project:
+  - what the project does;
+  - why the project is useful;
+  - how users can get started with the project;
+  - where users can get help with your project;
+  - who maintains and contributes to the project.
+- Add the [`.gitignore`](https://git-scm.com/docs/gitignore) file to the repository to ignore files that should not be committed to the repository.
+- Add the [`CONTRIBUTING`](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors) file to the repository, describing how to contribute to the project. This way [`README`](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) file will be smaller.
+- Add the [`CODE_OF_CONDUCT.md`](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) file to the repository. Read more: [https://www.contributor-covenant.org](https://www.contributor-covenant.org).
+- Add the [`CODEOWNERS`](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) file to the repository.
+- Add the [`CITATION.cff`](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) file for the scientific projects.
+- Add [topic tags](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics) to the repository.
+- Add the `.editorconfig` file to the repository to define editor settings. Read more: [https://editorconfig.org/](https://editorconfig.org/).
+- Protect the `main` branch with reasonable rules:
+  - Require pull request review before merging.
+  - Require status checks before merging.
+  - Require signed commits.
+  - Require approvals.
+  - Read more: [https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches).
+- Configure CI/CD pipelines to run tests and code quality checks:
+  - Autoformatting check;
+  - Linting check;
+  - Tests check;
+  - Code coverage check;
+  - Code quality and vulnerabilities check (for example, [CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql));
+  - Automated release creation.
