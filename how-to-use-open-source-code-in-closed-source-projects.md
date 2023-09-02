@@ -11,6 +11,7 @@
   - [Non-production software](#non-production-software)
     - [Allowed to use in non-production software](#allowed-to-use-in-non-production-software)
     - [Not allowed to use in non-production software](#not-allowed-to-use-in-non-production-software)
+  - [Research tools, software and libraries](#research-tools-software-and-libraries)
 - [Appendix](#appendix)
   - [Approved list of permissive licenses](#approved-list-of-permissive-licenses)
   - [Acceptable only for SaaS backend and non-production use](#acceptable-only-for-saas-backend-and-non-production-use)
@@ -28,6 +29,7 @@ We could split our closed-source projects into three categories:
 - [Shipped software](#shipped-software)
 - [SaaS backend](#saas-backend)
 - [Non-production software](#non-production-software)
+- [Research tools, software and libraries](#research-tools-software-and-libraries)
 
 ### Shipped software
 
@@ -87,8 +89,7 @@ For example:
 
 - bundlers/packers;
 - testing and debugging libraries included only in the test/development environment;
-- code analyzing tools;
-- R&D code that is used only for internal purposes.
+- code analyzing tools.
 
 #### Allowed to use in non-production software
 
@@ -102,6 +103,29 @@ You should be always aware of all your dependencies and their licenses:
 
 - Some OSS-licensed libraries have dual licensing and must be licensed for use in commercial projects. We could use them, but a license must be acquired, the same as for any commercial software.
 - Any code (from blogs, books, etc.) must be treated as copyrighted and not allowed to use in closed-source projects unless an appropriate OSS license is explicitly specified or you have explicit permission from the author.
+
+### Research tools, software and libraries
+
+In general, R&D software may be treated as [non-production software](#non-production-software).
+
+But, in cases when R&D software is used to create new formulas for active ingredients (or any other standalone results that are treated differently from the code itself), we should pay close attention to the licenses.
+
+Therefore, the use of any digital research tool, library or code that can potentially generate leads for new active ingredients must have a Freedom to Operate (FTO) assessment carried out by the IP department. Please contact Eddie Leslie (<eddie.leslie@syngenta.com>) or Bill Teoli (<William.teoli@syngenta.com>) if you are not already in contact with a patent attorney.
+
+The nature of the relevant open-source license will also have an impact on the FTO position of the research tool. The relevant license and any associated restrictions conferred should be checked before any use of any research tool.
+
+The following licenses are preferred from an IP FTO perspective:
+
+- [MIT License](https://choosealicense.com/licenses/mit/)
+- [Apache 2.0 License](https://choosealicense.com/licenses/apache-2.0/)
+- [BSD+Patent](https://opensource.org/license/bsdpluspatent/)
+- [ISC License](https://opensource.org/licenses/ISC)
+- [Unlicense](https://unlicense.org)
+- [OWFa 1.0](http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0) (patent version)
+- [European Union Public Licence 1.1](https://opensource.org/license/eupl-1-1/)
+
+The use of licenses not in the above list should be discussed with IP or Legal.
+Please note that preferred licenses do not negate the need for an FTO assessment for tools involved in active ingredient lead generation.
 
 ## Appendix
 
